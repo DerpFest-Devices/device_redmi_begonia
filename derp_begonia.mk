@@ -27,11 +27,17 @@ $(call inherit-product, device/redmi/begonia/device.mk)
 
 # Inherit from our custom product configuration
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/cesium/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+
+# Build type
+DERP_BUILD_ZIP_TYPE := VANILLA
+
+# Going official
+DERP_BUILDTYPE := Official
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := begonia
-PRODUCT_NAME := cesium_begonia
+PRODUCT_NAME := derp_begonia
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 8 Pro
 PRODUCT_MANUFACTURER := Xiaomi
